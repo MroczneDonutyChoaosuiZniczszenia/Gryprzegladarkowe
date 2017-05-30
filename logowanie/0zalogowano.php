@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 $pieprz = "1qaz7UHN";
 
-$sql = "SELECT id, hash FROM uzytkownik WHERE username = '".mysqli_real_escape_string($conn, $_POST["username"])."';";
+$sql = "SELECT id, hash FROM uzytkownik WHERE login = '".mysqli_real_escape_string($conn, $_POST["username"])."';";
 
 $result = $conn->query($sql);
 
