@@ -30,7 +30,8 @@ if(password_verify(mysqli_real_escape_string($conn, $_POST["password"]).$pieprz,
 	
 } else{
 	session_unset();
-	echo "Buuuu nie działa haseło lub login!!!";
+	echo "Buuuu nie działa haseło lub login!!!";<br/>
+	<a href="logowanie.php">powrót do logowania</a>
 }
 
 ?>
