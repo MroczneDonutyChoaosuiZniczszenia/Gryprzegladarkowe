@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
-$pieprz = "1234";
+$pieprz = "1qaz7UHN";
 $hash = password_hash(mysqli_real_escape_string($conn, $_POST["password"]).$pieprz, PASSWORD_DEFAULT);
 $sql = "INSERT INTO uzytkownik (username, hash) VALUES (\"".mysqli_real_escape_string($conn, $_POST["username"])."\" , \"".$hash."\")";
 
