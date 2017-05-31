@@ -9,12 +9,6 @@
 <body>
 
  <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "uzytkowncy";
-
-$conn = new mysqli($servername, $username, $password);
 
 ?>
 Dzisiaj jest: <?php echo date("d F o");
