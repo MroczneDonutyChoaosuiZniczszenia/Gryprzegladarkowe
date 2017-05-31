@@ -10,8 +10,8 @@
 
  <?php
 $servername = "localhost";
-$username = "root1";
-$password = "1";
+$username = "root";
+$password = "";
 $dbname = "uzytkowncy";
 
 $conn = new mysqli($servername, $username, $password);

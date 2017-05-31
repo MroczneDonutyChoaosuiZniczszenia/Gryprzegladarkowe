@@ -3,8 +3,8 @@
 <body>
 <?php
 $servername = "localhost";
-$username = "root1";
-$password = "1";
+$username = "root";
+$password = "";
 $dbname = "uzytkownicy";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,11 +27,12 @@ if(password_verify(mysqli_real_escape_string($conn, $_POST["password"]).$pieprz,
 {
 	$_SESSION['zalogowany']=$row['id'];
 	echo "Witaj ".$username;
-	
+
 } else{
 	session_unset();
-	echo "Buuuu nie działa haseło lub login!!!";<br/>
-	<a href="logowanie.php">powrót do logowania</a>
+	echo "Buuuu nie działa haseło lub login!!!"
+	?><br/>
+	<a href="logowanie.php">powrót do logowania</a><?php
 }
 
 ?>

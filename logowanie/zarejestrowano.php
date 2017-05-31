@@ -3,13 +3,11 @@
 <body>
 <?php
 $servername = "localhost";
-$username = "root1";
-$password = "1";
+$username = "root";
+$password = "";
 $dbname = "uzytkownicy";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-
 
 $pieprz = "1qaz7UHN";
 $hash = password_hash(mysqli_real_escape_string($conn, $_POST["password"]).$pieprz, PASSWORD_DEFAULT);
