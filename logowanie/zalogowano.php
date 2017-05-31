@@ -27,7 +27,8 @@ if(password_verify(mysqli_real_escape_string($conn, $_POST["password"]).$pieprz,
 {
 	$_SESSION['zalogowany']=$row['id'];
 	echo "Witaj ".$username;
-
+	?><br/>
+	<a href="wylogowanie.php">Wyloguj</a><?php
 } else{
 	session_unset();
 	echo "Buuuu nie działa haseło lub login!!!"
